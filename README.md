@@ -1,1 +1,1 @@
-[vignemale.tech](vignemale.tech)
+[vignemale.tech](http://vignemale.tech)
