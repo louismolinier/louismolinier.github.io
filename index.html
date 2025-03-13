@@ -44,11 +44,51 @@
         a:hover {
             text-decoration: underline;
         }
+        
+        .video-container {
+            margin-bottom: 2rem;
+            max-width: 480px;
+            width: 90%;
+        }
+        
+        video {
+            width: 100%;
+            max-height: 270px;
+            object-fit: contain;
+        }
+        
+        .contact {
+            margin-bottom: 2rem;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .video-container {
+                max-width: 320px;
+            }
+            
+            video {
+                max-height: 180px;
+            }
+            
+            h1 {
+                font-size: 3rem;
+            }
+        }
     </style>
 </head>
 <body>
     <h1><i>vignemale</i></h1>
-    <p class="description">Coming soon</p>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="video.mov" type="video/quicktime">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <p class="contact">Contact us at <a href="mailto:vignemale@mail.com">vignemale@mail.com</a></p>
+    
     <div class="links">
         <a href="terms-of-service.html">Terms of Service</a>
         <a href="privacy-policy.html">Privacy Policy</a>
